@@ -1,2 +1,1 @@
-# portfoliophotos
-Portfólio direcionado a Fotografias, Momentos e Realizações Humanas-Objetos
+Projeto Portfolio de fotos que demonstram sentimentos, emoções e a vida humana através das lentes de um Iphone XR com resoluções 1920x 1080p, além da mão do fotográfo que incube aqueles a este novo ideal de fotografia.
