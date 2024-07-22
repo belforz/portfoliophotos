@@ -23,9 +23,20 @@ const socialMedia ={
 
 const category = {
     landscapes:[
-        {
+        {id: 1,
+            title: 'Confets',
+            description: 'Amazing Picture',
+            image: 'images/emotions-goodbye-sp.JPEG',
+        
+
+        }, {id: 2,
+            title: 'Lake',
+            description: 'Amazing Picture',
+            image: 'images/landscape-lake-ibirapuerasp.JPEG',
+        
 
         }
+
     ],
     portraits:[
         {
@@ -50,3 +61,9 @@ const category = {
 
 
 }
+
+export default {category}
+
+    
+    
+    
