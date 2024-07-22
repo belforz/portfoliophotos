@@ -19,7 +19,7 @@
 
         <p class="mb-4">
           Todos têm um olhar fotográfico, alguns trabalham com isso e outros momentâneos e eu sou ambos. Este site tem a sua função de demonstrar
-          minhas capturas de momentos do passado com a finalidade de demonstrar esses <em>glimpses</em> da vida a partir de minha visão de mundo e 
+          minhas capturas de momentos do passado com a finalidade de demonstrar esses <em>glimpses</em> da vida a partir de minha visão e 
           mostrar ao mundo aquele que o Leandro se insere.
         </p>
       </div>

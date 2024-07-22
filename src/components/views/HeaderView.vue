@@ -4,7 +4,7 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between space-x-4 space-y-4 mx-auto p-4">
             <!-- logo -->
             <div class="flex-shrink-0 flex sm:justify-center sm:items-center">
-                <img src="/src/assets/images/leo.png" class="max-w-full h-auto rounded-full" width="100">
+                <img src="/public/images/leo.png" class="max-w-full h-auto rounded-full" width="100">
             </div>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <button @click="toggleNavbar"
