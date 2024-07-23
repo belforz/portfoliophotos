@@ -9,10 +9,6 @@
 /* Fonte */
 
 
-.body{
-
-  background-color: black;
-}
 #app{
     font-family: 'Source Code Pro', monospace; /* update if importing a different font than the one above */
     font-size: 16px; /* update if needed (16px is the standard for modern browsers) */

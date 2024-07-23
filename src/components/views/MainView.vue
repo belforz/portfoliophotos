@@ -1,14 +1,21 @@
 <template>
-  <SplashView v-if="showingSplash"/>
-  <div v-else class="flex-1 flex-col order-1 md:order-none">
-    <div class="container mx-auto max-w-full 2xl:max-w-6xl">
-      <!-- <HeaderView /> -->
-      <!-- <div class="flex justify-center">
-        <ApresentationView />
-      </div> -->
-      <PCSlideshow />
-      <Footer />
-    </div>
+  <div>
+    <!-- Exibe o SplashView sem transição -->
+    <SplashView v-if="showingSplash" key="splash" />
+
+    <!-- Aplica a transição apenas ao conteúdo principal -->
+    <PagesLoad v-else>
+      <div class="flex-1 flex-col order-1 md:order-none" key="main">
+        <div class="container mx-auto max-w-full 2xl:max-w-6xl">
+          <!-- <HeaderView /> -->
+          <div class="flex justify-center">
+            <ApresentationView />
+          </div>
+          <PCSlideshow />
+          <Footer />
+        </div>
+      </div>
+    </PagesLoad>
   </div>
 </template>
 
@@ -21,6 +28,7 @@ import PCSlideshow from './PCSlideshow.vue';
 import SplashView from './SplashView.vue';
 import ApresentationView from './ApresentationView.vue';
 import { splashScreen as photosSplashScreen } from '../photos.js'; // Ajuste o caminho conforme necessário
+import PagesLoad from '@/transitions/PagesLoad.vue';
 
 const router = useRouter();
 const showingSplash = ref(photosSplashScreen);

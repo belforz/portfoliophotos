@@ -7,12 +7,29 @@ const splashScreen = true // recommended: for best behavior after refresh
 const greeting = {
     intro: "Olá atento usuário(a), este quem narra é",
     name: "Leandro Belfor",
-    messageOne: "um amante de tecnologia e também por fotos, venho atráves destas lentes",
-    messageTwo: "demonstrar meus sentimentos, emoções e capturas de momento sobre o mundo e sobre mim",
-    messageThree: "Obrigado por também por compartilhar a imersão no mundo da fotografia.",
+    messageOne: "Um amante de tecnologia e também por fotos, venho atráves destas lentes",
+    messageTwo: "demonstrar meus sentimentos, emoções e capturas de momento sobre o mundo e sobre mim.",
+    messageThree: "Obrigado por também compartilhar a imersão no mundo da fotografia.",
     portraitLink:'images/F52C925F-812B-43AC-A1CA-3767AADD30EE.jpg',
     portraitLinkTwo: 'images/myself-behinthelake-bel.jpg',
-    portraitLinkThree:'images/verde3.jpg'
+    portraitLinkThree:'images/red1.jpg',
+    portraitLinkFour:'images/blonde2.JPG',
+    portraitLinkFive:'images/blonde3.jpg',
+    portraitLinkSix:'images/colored.jpg',
+    portraitLinkSeven:'images/blonde4.jpg',
+    portraitLinkEight:'images/red1.jpg',
+    portraitLinkNine:'images/verde2.jpg',
+    portraitLinkTen:'images/rede2.jpg',
+    portraitLinkEleven:'images/verde7.jpg',
+    portraitLinkTwelve:'images/colored1.jpg',
+    portraitLinkThirteen:'images/blonde9.jpg',
+    portraitLinkFourteen:'images/blonde10.jpg',
+    portraitLinkFiveteen:'images/blondeblack1.jpg',
+    portraitLinkSixteen:'images/blondeblack2.jpg',
+    portraitLinkSeventeen:'images/colored3.jpg',
+    portraitLinkEighteen:'images/colored2.jpg',
+    portraitLinkNineteen:'images/blonde6.jpg',
+    portraitLinkTwenty:'images/colored4.jpg',
 }
 
 const socialMedia ={

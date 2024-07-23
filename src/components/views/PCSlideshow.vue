@@ -1,4 +1,5 @@
 <template>
+  <div class="flex justify-center text-7xl text-white bg-black py-8">Portfolio by belforz</div>
   <div class="relative w-full h-screen overflow-hidden" v-for="category in categories" :key="category">
     <div v-for="(photo, index) in photos[category]" :key="photo.id" class="slide-wrapper absolute w-full h-full transition-opacity duration-[3000ms] ease-in-out" :class="{ 'opacity-100': currentIndexes[category] === index, 'opacity-0': currentIndexes[category] !== index }">
       <img :src="photo.imageLink" :alt="photo.title" class="w-full h-full object-cover">
