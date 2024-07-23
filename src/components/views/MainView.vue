@@ -2,7 +2,10 @@
   <SplashView v-if="showingSplash"/>
   <div v-else class="flex-1 flex-col order-1 md:order-none">
     <div class="container mx-auto max-w-full 2xl:max-w-6xl">
-      <HeaderView />
+      <!-- <HeaderView /> -->
+      <!-- <div class="flex justify-center">
+        <ApresentationView />
+      </div> -->
       <PCSlideshow />
       <Footer />
     </div>
@@ -16,6 +19,7 @@ import HeaderView from './HeaderView.vue';
 import Footer from './Footer.vue';
 import PCSlideshow from './PCSlideshow.vue';
 import SplashView from './SplashView.vue';
+import ApresentationView from './ApresentationView.vue';
 import { splashScreen as photosSplashScreen } from '../photos.js'; // Ajuste o caminho conforme necessário
 
 const router = useRouter();

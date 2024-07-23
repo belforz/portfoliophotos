@@ -7,8 +7,12 @@ const splashScreen = true // recommended: for best behavior after refresh
 const greeting = {
     intro: "Olá atento usuário(a), este quem narra é",
     name: "Leandro Belfor",
-    message: "um amante de tecnologia e também por fotos, venho atráves destas lentes, demonstrar meus sentimentos, emoções e capturas de momento sobre o mundo e sobre mim. Obrigado por também por compartilhar a imersão no mundo da fotografia",
-    portraitLink:'images/exemplo.png'
+    messageOne: "um amante de tecnologia e também por fotos, venho atráves destas lentes",
+    messageTwo: "demonstrar meus sentimentos, emoções e capturas de momento sobre o mundo e sobre mim",
+    messageThree: "Obrigado por também por compartilhar a imersão no mundo da fotografia.",
+    portraitLink:'images/F52C925F-812B-43AC-A1CA-3767AADD30EE.jpg',
+    portraitLinkTwo: 'images/myself-behinthelake-bel.jpg',
+    portraitLinkThree:'images/verde3.jpg'
 }
 
 const socialMedia ={
@@ -43,4 +47,4 @@ const photos = {
     ]
 }
 
-export { photos, splashScreen }
+export { photos, splashScreen, greeting }
