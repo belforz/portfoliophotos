@@ -8,10 +8,13 @@
       <div class="flex-1 flex-col order-1 md:order-none" key="main">
         <div class="container mx-auto max-w-full 2xl:max-w-6xl">
           <!-- <HeaderView /> -->
+
+          <PCSlideshow />
+
           <div class="flex justify-center">
             <ApresentationView />
+
           </div>
-          <PCSlideshow />
           <Footer />
         </div>
       </div>
