@@ -64,4 +64,19 @@ const photos = {
     ]
 }
 
-export { photos, splashScreen, greeting }
+const photosBW ={
+    firstOne: [
+        // { id: 1, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-1.jpg' },
+        { id: 2, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-2.jpg' },
+        { id: 3, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-3.jpg' },
+        { id: 4, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-4.jpg' },
+        { id: 5, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-5.jpg' },
+        { id: 6, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-6.jpg' },
+        { id: 7, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-7.jpg' },
+        { id: 8, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-8.jpg' },
+        { id: 9, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-9.jpg' },
+    ]
+
+}
+
+export { photos,photosBW, splashScreen, greeting }

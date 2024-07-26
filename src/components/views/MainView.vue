@@ -8,13 +8,18 @@
       <div class="flex-1 flex-col order-1 md:order-none" key="main">
         <div class="container mx-auto max-w-full 2xl:max-w-6xl">
           <!-- <HeaderView /> -->
+          <div class="z-50">
+           <LayoutView/>
+          
+          </div>
 
-          <PCSlideshow />
+          <!-- <PCSlideshow /> -->
+           
 
-          <div class="flex justify-center">
+           <div class="flex justify-center">
             <ApresentationView />
 
-          </div>
+          </div> 
           <Footer />
         </div>
       </div>
@@ -31,6 +36,7 @@ import PCSlideshow from './PCSlideshow.vue';
 import SplashView from './SplashView.vue';
 import ApresentationView from './ApresentationView.vue';
 import { splashScreen as photosSplashScreen } from '../photos.js'; // Ajuste o caminho conforme necessário
+import LayoutView from './LayoutView.vue';
 import PagesLoad from '@/transitions/PagesLoad.vue';
 
 const router = useRouter();
