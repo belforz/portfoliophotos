@@ -17,7 +17,7 @@
   <script setup>
   import { ref, computed, onMounted } from 'vue';
   
-  const max = 21;
+  const max = 20;
   const character = '#';
   const hashtags = ref([]);
   const message = computed(() => {

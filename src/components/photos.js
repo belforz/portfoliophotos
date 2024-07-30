@@ -65,16 +65,16 @@ const photos = {
 }
 
 const photosBW ={
-    firstOne: [
+    BW: [
         // { id: 1, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-1.jpg' },
-        { id: 2, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-2.jpg' },
-        { id: 3, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-3.jpg' },
-        { id: 4, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-4.jpg' },
-        { id: 5, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-5.jpg' },
-        { id: 6, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-6.jpg' },
-        { id: 7, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-7.jpg' },
-        { id: 8, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-8.jpg' },
-        { id: 9, title: '', description: 'Museum Through Lens', imageLink: 'images/bw-9.jpg' },
+        { id: 2, title: '', description: 'Threes', imageLink: 'images/bw-2.jpg' },
+        { id: 3, title: '', description: 'Landscape', imageLink: 'images/bw-3.jpg' },
+        { id: 4, title: '', description: 'Buildings', imageLink: 'images/bw-4.jpg' },
+        { id: 5, title: '', description: 'Nature', imageLink: 'images/bw-5.jpg' },
+        { id: 6, title: '', description: 'Crying of Falling Angel', imageLink: 'images/bw-6.jpg' },
+        { id: 7, title: '', description: 'Immensity', imageLink: 'images/bw-7.jpg' },
+        { id: 8, title: '', description: 'Sun by the River', imageLink: 'images/bw-8.jpg' },
+        { id: 9, title: '', description: 'A Dizzy Rio', imageLink: 'images/bw-9.jpg' },
     ]
 
 }
