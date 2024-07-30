@@ -1,30 +1,28 @@
 <template>
-  <div>
-    <!-- Exibe o SplashView sem transição -->
-    <SplashView v-if="showingSplash" key="splash" />
+  <div class="min-h-screen flex flex-col">
+  <!-- Exibe o SplashView sem transição -->
+  <SplashView v-if="showingSplash" key="splash" />
 
-    <!-- Aplica a transição apenas ao conteúdo principal -->
-    <PagesLoad v-else>
-      <div class="flex-1 flex-col order-1 md:order-none" key="main">
-        <div class="container mx-auto max-w-full 2xl:max-w-6xl">
-          <!-- <HeaderView /> -->
-          <div class="z-50">
-           <LayoutView/>
-          
-          </div>
-
-          <!-- <PCSlideshow /> -->
-           
-
-           <div class="flex justify-center">
-            <ApresentationView />
-
-          </div> 
-          <Footer />
+  <!-- Aplica a transição apenas ao conteúdo principal -->
+  <PagesLoad v-else>
+    <div class="flex-1 flex-col">
+      <div class="container mx-auto px-4">
+        <!-- <HeaderView /> -->
+        <div class="z-50">
+          <LayoutView />
         </div>
+
+        <!-- <PCSlideshow /> -->
+
+        <div class="flex justify-center">
+          <ApresentationView />
+        </div>
+        <Footer />
       </div>
-    </PagesLoad>
-  </div>
+    </div>
+  </PagesLoad>
+</div>
+
 </template>
 
 <script setup>
