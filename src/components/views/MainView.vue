@@ -5,10 +5,10 @@
 
   <!-- Aplica a transição apenas ao conteúdo principal -->
   <PagesLoad v-else>
-    <div class="flex-1 flex-col">
+    <div class="flex-1 flex-col bg-black">
       <div class="container mx-auto px-4">
         <!-- <HeaderView /> -->
-        <div class="z-50">
+        <div class="z-50 ">
           <LayoutView />
         </div>
 
