@@ -43,25 +43,34 @@ const photos = {
         { id: 1, title: 'Museum', description: 'Museum Through Lens', imageLink: 'images/world-buildings-nature-trianon-sp.jpg' },
         { id: 2, title: 'Ibirapuera', description: 'The Heart Of Sao Paolo', imageLink: 'images/landscape-vast-of-sunset-sp.jpg' },
         { id: 3, title: 'Sunset', description: 'Praia Grande View by Sunset', imageLink: 'images/IMG_4084.jpg' },
-        { id: 4, title: 'From The Rio', description: 'Vou-de-voz', imageLink: 'images/IMG_2251.jpg' }
+        { id: 4, title: 'From The Rio', description: 'Praia Grande Evening', imageLink: 'images/IMG_4101.jpg' },
+        { id: 5, title: 'From The Rio', description: 'Trees of Life', imageLink: 'images/IMG_1801.jpg' },
+        { id: 6, title: 'From The Rio', description: 'Happy Together', imageLink: 'images/IMG_7008.jpg' },
+        { id: 7, title: 'From The Rio', description: 'Vou-de-voz', imageLink: 'images/IMG_2251.jpg' },
+        { id: 8, title: 'From The Rio', description: 'Goodbye', imageLink: 'images/landscape-river-bel.jpg' },
+       
     ],
     emotions: [
-        { id: 1, title: 'Tears of The Fallen Angel', description: 'Rain Trough The Night', imageLink: 'images/emotions-crying-of-the-fallen-angel-sp.jpg' },
+        { id: 1, title: 'Tears of The Fallen Angel', description: 'Rain Through The Night', imageLink: 'images/emotions-crying-of-the-fallen-angel-sp.jpg' },
         { id: 2, title: 'Blossom Era', description: 'Calmness', imageLink: 'images/emotions-flowers-blossom-sp.jpg' },
         { id: 3, title: 'Immension', description: 'Rain by the River', imageLink: 'images/emotions-vastness-of-the-mind.jpg' },
-        { id: 4, title: 'Ballons', description: 'Up to the moon', imageLink: 'images/emotions-living-sp.jpg' }
+        { id: 4, title: 'Ballons', description: 'Capitalism', imageLink: 'images/IMG_2600.jpg' },
+        { id: 5, title: 'Ballons', description: 'Solitude', imageLink: 'images/Ultralight_IMG_8789.jpg' },
+        { id: 6, title: 'Ballons', description: 'Last Time', imageLink: 'images/emotions-goodbye-sp.jpg' },
+        { id: 7, title: 'Ballons', description: 'Roots of', imageLink: 'images/IMG_9773.jpg' },
+        { id: 8, title: 'Ballons', description: 'Up to the moon', imageLink: 'images/emotions-living-sp.jpg' },
     ],
     world: [
-        { id: 1, title: 'As It Is', description: 'Whole', imageLink: 'images/world-center-of-the-heart-sp.jpg' },
-        { id: 2, title: 'Humans History', description: 'Whole', imageLink: 'images/world-build-paulista-sunset-sp.jpg' },
-        { id: 3, title: 'By The Sky', description: 'Whole', imageLink: 'images/world-sunset-by-the-park-sp.jpg' },
-        { id: 4, title: 'Three Phases of Human History', description: 'Whole', imageLink: 'images/world-three-dimensions-of-life.jpg' }
+        { id: 1, title: 'As It Is', description: 'As It is', imageLink: 'images/world-center-of-the-heart-sp.jpg' },
+        { id: 2, title: 'Humans History', description: 'Majestation', imageLink: 'images/IMG_2053.jpg' },
+        { id: 3, title: 'By The Sky', description: 'Love is everything', imageLink: 'images/IMG_5881.jpg' },
+        { id: 4, title: 'Three Phases of Human History', description: 'Rust', imageLink: 'images/IMG_4116.jpg' },
+        { id: 5, title: 'Three Phases of Human History', description: 'Banespa', imageLink: 'images/world-banespa-sp.jpg' },
+        { id: 6, title: 'Three Phases of Human History', description: 'Like IT is', imageLink: 'images/IMG_2946.jpg' },
+        { id: 7, title: 'Three Phases of Human History', description: 'Day or Night?', imageLink: 'images/IMG_7913.jpg' },
+        { id: 8, title: 'Three Phases of Human History', description: 'Past & Future', imageLink: 'images/IMG_2822.jpg' },
     ],
-    myself: [
-        { id: 1, title: 'Younger', description: ':)', imageLink: 'images/myself-river-3.jpg' },
-        { id: 2, title: 'Younger', description: ':)', imageLink: 'images/C067FB4D-5DF9-4F6E-8E2B-606F1AB3A6EB.jpg' },
-        { id: 3, title: 'Younger', description: ':)', imageLink: 'images/7D08F6DD-91EC-4C6C-87BD-000B2FC02193.jpg' }
-    ]
+    
 }
 
 const photosBW ={
@@ -71,10 +80,11 @@ const photosBW ={
         { id: 3, title: '', description: 'Landscape', imageLink: 'images/bw-3.jpg' },
         { id: 4, title: '', description: 'Buildings', imageLink: 'images/bw-4.jpg' },
         { id: 5, title: '', description: 'Nature', imageLink: 'images/bw-5.jpg' },
-        { id: 6, title: '', description: 'Crying of Falling Angel', imageLink: 'images/bw-6.jpg' },
+        { id: 6, title: '', description: 'Crying of Falling Angel', imageLink: 'images/bw-10.jpg' },
         { id: 7, title: '', description: 'Immensity', imageLink: 'images/bw-7.jpg' },
         { id: 8, title: '', description: 'Sun by the River', imageLink: 'images/bw-8.jpg' },
         { id: 9, title: '', description: 'A Dizzy Rio', imageLink: 'images/bw-9.jpg' },
+        // { id: 10, title: '', description: 'Up to the Sky', imageLink: 'images/bw-10.jpg' },
     ]
 
 }

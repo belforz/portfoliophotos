@@ -4,7 +4,7 @@
     <div v-for="(category, categoryName) in photosBW" :key="categoryName" class="mb-12">
       <h2 class="text-2xl text-center text-white mb-6">{{ categoryName }}</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div v-for="(photo, index) in category" :key="photo.id" class="relative pb-[100%]" @click="toggleTetris(index, 'BW')">
+        <div v-for="(photo, index) in category" :key="photo.id" class="relative pb-[100%] border-2 border-white" @click="toggleTetris(index, 'BW')">
           <img :src="photo.imageLink" :alt="photo.title" 
                :class="[
                  'absolute top-0 left-0 w-full h-full object-cover rounded-lg shadow-md transition-transform duration-500', 
@@ -22,7 +22,7 @@
     <div v-for="(category, categoryName) in photos" :key="categoryName" class="mb-12">
       <h2 class="text-2xl text-center text-white mb-6">{{ categoryName }}</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div v-for="(photo, index) in category" :key="photo.id" class="relative pb-[100%]" @click="toggleTetris(index, 'Colored')">
+        <div v-for="(photo, index) in category" :key="photo.id" class="relative pb-[100%] border-2 border-white" @click="toggleTetris(index, 'Colored')">
           <img :src="photo.imageLink" :alt="photo.title" 
                :class="[
                  'absolute top-0 left-0 w-full h-full object-cover rounded-lg shadow-md transition-transform duration-500', 

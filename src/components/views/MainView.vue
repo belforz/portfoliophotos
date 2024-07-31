@@ -6,13 +6,14 @@
   <!-- Aplica a transição apenas ao conteúdo principal -->
   <PagesLoad v-else>
     <div class="flex-1 flex-col bg-black">
+      <PCSlideshow />
       <div class="container mx-auto px-4">
         <!-- <HeaderView /> -->
         <div class="z-50 ">
           <LayoutView />
         </div>
 
-        <!-- <PCSlideshow /> -->
+        
 
         <div class="flex justify-center">
           <ApresentationView />
