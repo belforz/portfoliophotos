@@ -7,6 +7,9 @@
   <PagesLoad v-else>
     <div class="flex-1 flex-col bg-black">
       <PCSlideshow />
+       <!-- <TesteView /> -->
+    
+
       <div class="container mx-auto px-4">
         <!-- <HeaderView /> -->
         <div class="z-50 ">
@@ -37,6 +40,8 @@ import ApresentationView from './ApresentationView.vue';
 import { splashScreen as photosSplashScreen } from '../photos.js'; // Ajuste o caminho conforme necessário
 import LayoutView from './LayoutView.vue';
 import PagesLoad from '@/transitions/PagesLoad.vue';
+import TesteView from './TesteView.vue';
+import ContentView from './junk/ContentView.vue';
 
 const router = useRouter();
 const showingSplash = ref(photosSplashScreen);
