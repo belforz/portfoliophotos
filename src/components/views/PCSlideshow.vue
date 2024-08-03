@@ -34,12 +34,12 @@ const photosHorizontals = {
     { id: 3, title: 'Belém', description: 'Constrast of The Old', imageLink: 'images/IMG_6915.jpg' },
     { id: 4, title: 'Casa das Trezes Janelas', description: 'Localiza ai', imageLink: 'images/IMG_6070.jpg' }
   ], 
-  // BW: [
-  //   { id: 1, title: '', description: 'Threes', imageLink: 'images/bw-2.jpg' },
-  //   { id: 2, title: '', description: 'Threes', imageLink: 'images/bw-2.jpg' },
-  //   { id: 3, title: '', description: 'Threes', imageLink: 'images/bw-2.jpg' },
-  //   { id: 4, title: '', description: 'Threes', imageLink: 'images/bw-2.jpg' }
-  // ] 
+   BW: [
+     { id: 1, title: 'Immensity', description: 'Theres one?', imageLink: 'images/Ultralight_IMG_5835.jpg' },
+    { id: 2, title: 'Rain Season', description: 'Avenue', imageLink: 'images/bw2.jpg' },
+    { id: 3, title: 'Immensity', description: 'Darkness', imageLink: 'images/bw1.jpg' },
+     { id: 4, title: 'Glasses', description: '?', imageLink: 'images/bw4.jpg' }
+   ] 
 };
 
 const categories = Object.keys(photosHorizontals);
@@ -63,7 +63,7 @@ onMounted(() => {
   categories.forEach(category => {
     setInterval(() => {
       nextSlide(category);
-    }, 5000); // Troca de slide a cada 5 segundos (ajuste conforme necessário)
+    }, 5000); // Troca de slide a cada 5 segundos
   });
 });
 </script>

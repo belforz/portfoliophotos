@@ -97,16 +97,16 @@ onMounted(() => {
   }
 }
 
-.animate-glow {
+/* .animate-glow {
   animation: glow 5s infinite ease-in-out;
   border-radius: 50%;
 }
 
 .animate-glow .icon-container {
   animation: glow 5s infinite ease-in-out;
-  padding: 5px; /* Optional: add padding to make the glow more prominent */
+  padding: 5px; 
   border-radius: 50%;
-}
+} */
 
 /* .animate-glow p {
   animation: glow 2s infinite ease-in-out;
