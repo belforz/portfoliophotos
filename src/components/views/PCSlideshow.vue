@@ -1,5 +1,7 @@
 <template>
-  <!-- <div class="flex justify-center text-7xl text-white bg-black py-8">Portfolio by belforz</div> -->
+  <div class="mb-12">
+      <h1 class="text-4xl text-center text-white mb-6 p-6 border-b-4 border-white pb-4">Reflexos de Fotografias: Um Passeio Virtual</h1>
+    </div>
   <div class="relative w-full h-screen overflow-hidden" v-for="category in categories" :key="category">
     <div v-for="(photo, index) in photosHorizontals[category]" :key="photo.id" class="slide-wrapper absolute w-full h-full transition-opacity duration-[3000ms] ease-in-out" :class="{ 'opacity-100': currentIndexes[category] === index, 'opacity-0': currentIndexes[category] !== index }">
       <img :src="photo.imageLink" :alt="photo.title" class="w-full h-full object-cover">
@@ -35,9 +37,9 @@ const photosHorizontals = {
     { id: 4, title: 'Casa das Trezes Janelas', description: 'Localiza ai', imageLink: 'images/IMG_6070.jpg' }
   ], 
    BW: [
-     { id: 1, title: 'Immensity', description: 'Theres one?', imageLink: 'images/Ultralight_IMG_5835.jpg' },
+     { id: 1, title: 'Immensity', description: 'There is one?', imageLink: 'images/Ultralight_IMG_5835.jpg' },
     { id: 2, title: 'Rain Season', description: 'Avenue', imageLink: 'images/bw2.jpg' },
-    { id: 3, title: 'Immensity', description: 'Darkness', imageLink: 'images/bw1.jpg' },
+    { id: 3, title: 'Immensity', description: 'Feels Different', imageLink: 'images/bw1.jpg' },
      { id: 4, title: 'Glasses', description: '?', imageLink: 'images/bw4.jpg' }
    ] 
 };

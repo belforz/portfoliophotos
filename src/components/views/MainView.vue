@@ -1,31 +1,33 @@
 <template>
   <div class="min-h-screen flex flex-col">
-  <!-- Exibe o SplashView sem transição -->
-  <SplashView v-if="showingSplash" key="splash" />
+    <!-- Exibe o SplashView sem transição -->
+    <SplashView v-if="showingSplash" key="splash" />
 
-  <!-- Aplica a transição apenas ao conteúdo principal -->
-  <PagesLoad v-else>
-    <div class="flex-1 flex-col bg-black">
-      <PCSlideshow />
-       <!-- <TesteView /> -->
-    
+    <!-- Aplica a transição apenas ao conteúdo principal -->
+    <PagesLoad v-else>
+      <div class="flex-1 flex-col bg-black">
+        <PCSlideshow />
+        <!-- <TesteView /> -->
 
-      <div class="container mx-auto px-4">
-        <!-- <HeaderView /> -->
-        <div class="z-50 ">
-          <LayoutView />
+
+        <div class="container mx-auto px-4">
+          <!-- <HeaderView /> -->
+          <div class="z-50 ">
+            <LayoutView />
+          </div>
+
+
+
+          <div class="flex justify-center">
+            <ApresentationView />
+          </div>
+
+
+          <Footer />
         </div>
-
-        
-
-        <div class="flex justify-center">
-          <ApresentationView />
-        </div>
-        <Footer />
       </div>
-    </div>
-  </PagesLoad>
-</div>
+    </PagesLoad>
+  </div>
 
 </template>
 
@@ -42,6 +44,12 @@ import LayoutView from './LayoutView.vue';
 import PagesLoad from '@/transitions/PagesLoad.vue';
 import TesteView from './TesteView.vue';
 import ContentView from './junk/ContentView.vue';
+import { socialMedia } from '../photos.js';
+
+
+// social media
+const githubLink = socialMedia.github;
+const instagramLink = socialMedia.instagram;
 
 const router = useRouter();
 const showingSplash = ref(photosSplashScreen);

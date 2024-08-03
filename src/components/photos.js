@@ -15,7 +15,7 @@ const greeting = {
     portraitLinkThree:'images/red1.jpg',
     portraitLinkFour:'images/blonde2.JPG',
     portraitLinkFive:'images/blonde3.jpg',
-    portraitLinkSix:'images/colored.jpg',
+    portraitLinkSix:'images/colored1.jpg',
     portraitLinkSeven:'images/blonde4.jpg',
     portraitLinkEight:'images/red1.jpg',
     portraitLinkNine:'images/verde2.jpg',
@@ -89,4 +89,4 @@ const photosBW ={
 
 }
 
-export { photos,photosBW, splashScreen, greeting }
+export { photos,photosBW, splashScreen, greeting, socialMedia }
