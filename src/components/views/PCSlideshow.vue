@@ -19,11 +19,11 @@ import { ref, onMounted } from 'vue';
 // array local de fotos horizontais
 const photosHorizontals = {
   landscapes: [
-    { id: 1, title: 'Its Rio', description: 'Vou-de-vouz', imageLink: 'images/IMG_2251.jpg' },
+    { id: 1, title: 'River with Boats', description: 'Kinda hot', imageLink: 'images/IMG_6672.jpg' },
     { id: 2, title: 'Praia Grande Sunset', description: 'In The Horizon', imageLink: 'images/IMG_4084.jpg' },
-    { id: 3, title: 'Heart Of São Paulo', description: 'It is always by the lake', imageLink: 'images/IMG_1162.jpg' },
-    { id: 4, title: 'From the Heart', description: 'Threes', imageLink: 'images/C765E053-AD9B-473D-98B0-B81DCBA2508A.jpg' },
-  ], 
+    { id: 3, title: 'Movements', description: 'Sincronization', imageLink: 'images/IMG_8313.jpg' },
+     { id: 4, title: 'Life', description: 'is Árvores', imageLink: 'images/IMG_6973.jpg' },
+], 
   emotions: [
     { id: 1, title: 'Cold', description: 'Waves', imageLink: 'images/IMG_4187.jpg' },
     { id: 2, title: 'aRT', description: 'Collections Of Useless', imageLink: 'images/IMG_5816.jpg' },
@@ -34,7 +34,7 @@ const photosHorizontals = {
     { id: 1, title: 'dECK', description: 'Contrast of The New', imageLink: 'images/IMG_2294.jpg' },
     { id: 2, title: 'Rio', description: 'Immensity', imageLink: 'images/IMG_2232.jpg' },
     { id: 3, title: 'Belém', description: 'Constrast of The Old', imageLink: 'images/IMG_6915.jpg' },
-    { id: 4, title: 'Casa das Trezes Janelas', description: 'Localiza ai', imageLink: 'images/IMG_6070.jpg' }
+    { id: 4, title: 'Casa das Onze Janelas', description: 'Localiza ai', imageLink: 'images/IMG_6070.jpg' }
   ], 
    BW: [
      { id: 1, title: 'Immensity', description: 'There is one?', imageLink: 'images/Ultralight_IMG_5835.jpg' },
