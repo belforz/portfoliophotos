@@ -1,6 +1,3 @@
-Aqui está um exemplo de um `README.md` focado no seu portfólio de fotografia:
-
----
 
 # 📸 Portfolio de Fotografia
 
@@ -73,4 +70,4 @@ O projeto será executado localmente em `http://localhost:3000`.
 
 Agradeço a todos que compartilham essa jornada fotográfica comigo. Este portfólio foi projetado para não apenas exibir minhas fotos, mas também transmitir as emoções e histórias capturadas em cada clique.
 
----
+
