@@ -49,7 +49,7 @@ Para executar o projeto localmente:
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio
+git clone https://github.com/belforz/portofoliophotos.git
 ```
 
 ### 2. Instale as dependências
@@ -63,8 +63,6 @@ npm install
 ```bash
 npm run dev
 ```
-
-O projeto será executado localmente em `http://localhost:3000`.
 
 ## 📷 Agradecimentos
 
