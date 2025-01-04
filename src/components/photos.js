@@ -10,7 +10,7 @@ const greeting = {
     messageOne: "Um amante de tecnologia e também por fotos, venho atráves destas lentes",
     messageTwo: "demonstrar meus sentimentos, emoções e capturas de momento sobre o mundo e sobre mim.",
     messageThree: "Obrigado por também compartilhar a imersão no mundo da fotografia.",
-    portraitLink:'images/F52C925F-812B-43AC-A1CA-3767AADD30EE.jpg',
+    portraitLink:'images/vacations11.jpg',
     portraitLinkTwo: 'images/myself-behinthelake-bel.jpg',
     portraitLinkThree:'images/red1.jpg',
     portraitLinkFour:'images/blonde2.JPG',
