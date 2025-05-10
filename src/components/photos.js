@@ -73,7 +73,7 @@ const photos = {
     ],
     special: [
         { id: 1, title: 'Mutual', description: 'Shared connections', imageLink: 'images/copacabana-view.jpg' },
-        { id: 2, title: 'Lady Gaga', description: 'Paws Up', imageLink: 'images/jkiguatemi.jpg' },
+        { id: 2, title: 'Lady Gaga', description: 'Paws Up', imageLink: 'images/gaga.jpg' },
         { id: 3, title: 'Over the Horizon', description: 'Energies', imageLink: 'images/copabaca-people.jpg' },
         { id: 4, title: 'FA', description: 'Creative resilience', imageLink: 'images/fa.jpg' },
         { id: 5, title: 'Christ the Redeemer', description: 'Faith and hope', imageLink: 'images/cristo.jpg' },

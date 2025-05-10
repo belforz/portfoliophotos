@@ -22,6 +22,11 @@ import { ref, onMounted } from 'vue';
 
 // array local de fotos horizontais
 const photosHorizontals = {
+    special: [
+        { id: 1, title: 'Mutual', description: 'Connections', imageLink: 'images/copacabana-view.jpg' },
+        { id: 2, title: 'Lady Gaga', description: 'Paws Up', imageLink: 'images/gaga1.jpg' },
+        { id: 3, title: 'Over the Horizon', description: 'Energies', imageLink: 'images/imensidao.jpg' },
+        { id: 4, title: 'Flamingo', description: 'Cave', imageLink: 'images/fa.jpg' }],
   landscapes: [
     { id: 1, title: 'River with Boats', description: 'Kinda hot', imageLink: 'images/IMG_6672.jpg' },
     { id: 2, title: 'Praia Grande Sunset', description: 'In The Horizon', imageLink: 'images/IMG_4084.jpg' },
@@ -41,10 +46,10 @@ const photosHorizontals = {
     { id: 4, title: 'People', description: 'All at once', imageLink: 'images/vacations12.jpg' }
   ],
   world: [
-    { id: 1, title: 'Guanabara', description: 'Contrast of The New', imageLink: 'images/guanabara.jpg' },
+    // { id: 1, title: 'Guanabara', description: 'Contrast of The New', imageLink: 'images/guanabara.jpg' },
     { id: 2, title: 'Rio', description: 'Immensity', imageLink: 'images/IMG_2232.jpg' },
     { id: 3, title: 'Belém', description: 'Constrast of The Old', imageLink: 'images/IMG_6915.jpg' },
-    { id: 4, title: 'Gavea and the Lagoa', description: 'Localiza ai', imageLink: 'images/gavea-lagoa.jpg' }
+    // { id: 4, title: 'Gavea and the Lagoa', description: 'Localiza ai', imageLink: 'images/gavea-lagoa.jpg' }
   ],
   BW: [
     { id: 1, title: 'Immensity', description: 'There is one?', imageLink: 'images/Ultralight_IMG_5835.jpg' },
