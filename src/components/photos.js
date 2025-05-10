@@ -39,6 +39,7 @@ const socialMedia ={
 
 // seção categorias de fotos
 const photos = {
+
     landscapes: [
         { id: 1, title: 'Museum', description: 'Museum Through Lens', imageLink: 'images/world-buildings-nature-trianon-sp.jpg' },
         { id: 2, title: 'Ibirapuera', description: 'The Heart Of Sao Paolo', imageLink: 'images/landscape-vast-of-sunset-sp.jpg' },
@@ -70,6 +71,16 @@ const photos = {
         { id: 7, title: 'Three Phases of Human History', description: 'Day or Night?', imageLink: 'images/IMG_7913.jpg' },
         { id: 8, title: 'Three Phases of Human History', description: 'Past & Future', imageLink: 'images/IMG_2822.jpg' },
     ],
+    special: [
+        { id: 1, title: 'Mutual', description: 'Shared connections', imageLink: 'images/copacabana-view.jpg' },
+        { id: 2, title: 'Lady Gaga', description: 'Paws Up', imageLink: 'images/jkiguatemi.jpg' },
+        { id: 3, title: 'Over the Horizon', description: 'Energies', imageLink: 'images/copabaca-people.jpg' },
+        { id: 4, title: 'FA', description: 'Creative resilience', imageLink: 'images/fa.jpg' },
+        { id: 5, title: 'Christ the Redeemer', description: 'Faith and hope', imageLink: 'images/cristo.jpg' },
+        { id: 6, title: 'Polaroid', description: 'Timeless nostalgia', imageLink: 'images/imensidao.jpg' },
+        { id: 7, title: 'Gávea and Lagoon', description: 'Harmony of contrasts', imageLink: 'images/gavea-lagoa.jpg' },
+        { id: 8, title: 'Always', description: 'Shared guardianship', imageLink: 'images/museu.jpg' },
+    ],
     
 }
 
@@ -85,8 +96,21 @@ const photosBW ={
         { id: 8, title: '', description: 'Sun by the River', imageLink: 'images/bw-8.jpg' },
         { id: 9, title: '', description: 'A Dizzy Rio', imageLink: 'images/bw-9.jpg' },
         // { id: 10, title: '', description: 'Up to the Sky', imageLink: 'images/bw-10.jpg' },
-    ]
+        ]
+    }
 
-}
+const photosPolaroid = {
+        polaroids: [
+            { id: 1, title: 'On The Lake', description: 'Alan Sambista 23 anos de Lady Gaga', imageLink: 'images/polaroid1.jpg' },
+            { id: 2, title: 'Muniz', description: 'Smiles', imageLink: 'images/mutualp.PNG' },
+            { id: 3, title: 'All in One', description: 'A Farewell', imageLink: 'images/polaroid2.jpg' },
+            { id: 4, title: 'Cristo The Redeemer', description: ':)', imageLink: 'images/cristo-polaroid.jpg' },
+           
+        ]
+    }
+    
 
-export { photos,photosBW, splashScreen, greeting, socialMedia }
+    
+
+
+export { photos,photosBW, splashScreen, greeting, socialMedia, photosPolaroid }

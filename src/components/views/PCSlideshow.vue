@@ -41,10 +41,10 @@ const photosHorizontals = {
     { id: 4, title: 'People', description: 'All at once', imageLink: 'images/vacations12.jpg' }
   ],
   world: [
-    { id: 1, title: 'dECK', description: 'Contrast of The New', imageLink: 'images/IMG_2294.jpg' },
+    { id: 1, title: 'Guanabara', description: 'Contrast of The New', imageLink: 'images/guanabara.jpg' },
     { id: 2, title: 'Rio', description: 'Immensity', imageLink: 'images/IMG_2232.jpg' },
     { id: 3, title: 'Belém', description: 'Constrast of The Old', imageLink: 'images/IMG_6915.jpg' },
-    { id: 4, title: 'Casa das Onze Janelas', description: 'Localiza ai', imageLink: 'images/IMG_6070.jpg' }
+    { id: 4, title: 'Gavea and the Lagoa', description: 'Localiza ai', imageLink: 'images/gavea-lagoa.jpg' }
   ],
   BW: [
     { id: 1, title: 'Immensity', description: 'There is one?', imageLink: 'images/Ultralight_IMG_5835.jpg' },
