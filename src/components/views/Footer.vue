@@ -52,6 +52,18 @@
                 d="M12 2.163c3.18 0 3.559.012 4.826.07 1.223.055 2.092.235 2.643.397a5.363 5.363 0 0 1 1.876 1.259c.457.457.813.98 1.058 1.58.33.865.545 1.825.61 2.79.057 1.242.059 1.627.059 4.814s-.002 3.572-.059 4.814c-.065.964-.28 1.924-.61 2.79a5.364 5.364 0 0 1-1.58 1.876c-.865.33-1.842.595-2.643.65-1.267.058-1.646.07-4.826.07-3.18 0-3.558-.012-4.826-.07-1.223-.055-2.092-.235-2.643-.397a5.363 5.363 0 0 1-1.876-1.259c-.457-.457-.813-.98-1.058-1.58-.33-.865-.545-1.825-.61-2.79-.057-1.242-.059-1.627-.059-4.814s.002-3.572.059-4.814c.065-.964.28-1.924.61-2.79a5.364 5.364 0 0 1 1.58-1.876c.865-.33 1.842-.595 2.643-.65 1.267-.058 1.646-.07 4.826-.07zm0-2.163c-3.194 0-3.584.012-4.847.071-1.281.06-2.558.272-3.646.644-1.084.373-2.055.88-2.866 1.591a7.992 7.992 0 0 0-1.592 2.866c-.37 1.088-.583 2.365-.644 3.646-.059 1.264-.071 1.654-.071 4.847 0 3.194.012 3.583.071 4.847.06 1.281.272 2.558.644 3.646a7.992 7.992 0 0 0 1.592 2.866c.811.711 1.782 1.218 2.866 1.591 1.088.373 2.365.585 3.646.645 1.264.059 1.654.071 4.847.071 3.194 0 3.584-.012 4.847-.071 1.281-.06 2.558-.272 3.646-.645 1.084-.373 2.055-.88 2.866-1.591a7.992 7.992 0 0 0 1.592-2.866c.37-1.088.583-2.365.644-3.646.059-1.264.071-1.654.071-4.847 0-3.194-.012-3.583-.071-4.847-.06-1.281-.272-2.558-.644-3.646a7.992 7.992 0 0 0-1.592-2.866c-.811-.711-1.782-1.218-2.866-1.591-1.088-.373-2.365-.585-3.646-.644-1.264-.059-1.654-.071-4.847-.071zM12 6.972a5.028 5.028 0 1 0 0 10.057 5.028 5.028 0 0 0 0-10.057zm0 8.057a3.028 3.028 0 1 1 0-6.057 3.028 3.028 0 0 1 0 6.057zm4.579-6.131a1.073 1.073 0 1 0 0 2.145 1.073 1.073 0 0 0 0-2.145z" />
             </svg>
           </a>
+          <!-- Play Music -->
+           <PlayCircle v-if="!isPlaying" class="h-10 w-10 text-white cursor-pointer hover:text-green-500" @click="toggleAudio"/>
+           <button @click="toggleAudio">
+      
+    </button>
+    
+    <audio ref="audioPlayer" loop>
+      <source :src="musicPath" type="audio/mpeg">
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+           <StopCircle v-if="isPlaying" class="h-10 w-10 text-white cursor-pointer hover:text-red-500" @click="toggleAudio"/>
+ 
         </div>
       </div>
     </div>
@@ -67,9 +79,25 @@
 
 <script setup>
 import { socialMedia } from '../photos';
+import { ref } from 'vue';
 import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { backgroundSong } from '../photos';
+import { PlayCircle, StopCircle } from 'lucide-vue-next';
 
 
 const githubLink = socialMedia.github;
 const instagramLink = socialMedia.instagram;
+
+const audioPlayer = ref(null);
+const isPlaying = ref(false);
+const musicPath = backgroundSong.musicLink;
+
+const toggleAudio = () => {
+  if (isPlaying.value) {
+    audioPlayer.value.pause();
+  } else {
+    audioPlayer.value.play();
+  }
+  isPlaying.value = !isPlaying.value;
+};
 </script>

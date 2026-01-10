@@ -37,6 +37,12 @@ const socialMedia ={
     instagram:"https://instagram.com/belforz"
 }
 
+const backgroundSong = {
+    musicLink: "audio/fourtet.mp3",
+    playSong: "🔊 Tocar Música",
+    pauseSong: "⏸️ Pausar Música"
+}
+
 // seção categorias de fotos
 const photos = {
 
@@ -113,4 +119,4 @@ const photosPolaroid = {
     
 
 
-export { photos,photosBW, splashScreen, greeting, socialMedia, photosPolaroid }
+export { photos,photosBW, splashScreen, greeting, socialMedia, photosPolaroid, backgroundSong }
