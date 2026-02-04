@@ -38,20 +38,23 @@
         </div>
       </template>
 
+      <template v-else-if="photo.div">
+        <div :class="photo.div"></div>
+      </template>
+
       <template v-else>
         <div class="bg-black h-16"></div>
-        <img
-          :src="photo.imageLink"
-          :alt="photo.title"
-          class="w-full h-full object-cover"
-        />
-        <div
-          class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-transparent to-transparent text-white p-6 shadow-md"
-        >
-          <h2 class="text-2xl font-bold">{{ photo.title }}</h2>
-          <p class="text-lg mt-2">{{ photo.description }}</p>
-        </div>
-        
+          <img
+            :src="photo.imageLink"
+            :alt="photo.title"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-transparent to-transparent text-white p-6 shadow-md"
+          >
+            <h2 class="text-2xl font-bold">{{ photo.title }}</h2>
+            <p class="text-lg mt-2">{{ photo.description }}</p>
+          </div>
       </template>
     </div>
   </div>
@@ -61,48 +64,47 @@
 import { onStartTyping } from "@vueuse/core";
 import { ref, onMounted, watch } from "vue";
 
-const typedTextBefore = ref('')
-const typedTextAfter = ref('')
-const isTypingAfter = ref(false)
+const typedTextBefore = ref("");
+const typedTextAfter = ref("");
+const isTypingAfter = ref(false);
 
 function typeEffectDual(part1, part2) {
-  typedTextBefore.value = ''
-  typedTextAfter.value = ''
-  isTypingAfter.value = false
+  typedTextBefore.value = "";
+  typedTextAfter.value = "";
+  isTypingAfter.value = false;
 
-  let index = 0
+  let index = 0;
 
   const interval1 = setInterval(() => {
     if (index < part1.length) {
-      typedTextBefore.value += part1[index]
-      index++
+      typedTextBefore.value += part1[index];
+      index++;
     } else {
-      clearInterval(interval1)
-      isTypingAfter.value = true
-      startTypingAfter()
+      clearInterval(interval1);
+      isTypingAfter.value = true;
+      startTypingAfter();
     }
-  }, 100)
+  }, 100);
 
   function startTypingAfter() {
-    let idx = 0
+    let idx = 0;
     const interval2 = setInterval(() => {
       if (idx < part2.length) {
-        typedTextAfter.value += part2[idx]
-        idx++
+        typedTextAfter.value += part2[idx];
+        idx++;
       } else {
-        clearInterval(interval2)
+        clearInterval(interval2);
       }
-    }, 100)
+    }, 100);
   }
 }
 
 onMounted(() => {
-  const photo = photosHorizontals.specialFather.find(p => p.type === 'text')
+  const photo = photosHorizontals.specialFather.find((p) => p.type === "text");
   if (photo) {
-    typeEffectDual(photo.textPart1, photo.textPart2)
+    typeEffectDual(photo.textPart1, photo.textPart2);
   }
-})
-
+});
 
 // array local de fotos horizontais
 const photosHorizontals = {
@@ -111,11 +113,22 @@ const photosHorizontals = {
       id: 1,
       type: "text",
       textPart1:
-      "Raimundo, queria lhe contar sobre as mudanças tanto pessoais como profissionais ao longo desse 1 ano, queria poder lhe dizer o quanto sou grato por todas as coisas que o senhor me proporcionou, queria dizer tantas coisas mas não consigo dizer nada sem você ao lado. Isso talvez faça parte da vida e como dói saber que não vou poder contar mais. Porém, tem algo que lhe digo,",
+        "Raimundo, queria lhe contar sobre as mudanças tanto pessoais como profissionais ao longo desse 1 ano, queria poder lhe dizer o quanto sou grato por todas as coisas que o senhor me proporcionou, queria dizer tantas coisas mas não consigo dizer nada sem você ao lado. Isso talvez faça parte da vida e como dói saber que não vou poder contar mais. Porém, tem algo que lhe digo,",
       textPart2: "o meu eu te amo onde quer que esteja.",
     },
   ],
+  specialFatherInit: [
+    {
+      div: "border-t border-white !mt-10 my-4",
+      configurable: false,
+    },
+  ],
   specialPhotoFather: [{ id: 2, imageLink: "images/pai_editado.jpeg" }],
+  specialFatherEnd: [{
+    div: "border-t border-white !mb-10 my-4",
+    configurable: false
+    
+  }],
   special: [
     {
       id: 1,
