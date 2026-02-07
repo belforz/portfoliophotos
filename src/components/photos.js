@@ -11,6 +11,7 @@ const greeting = {
     messageTwo: "demonstrar meus sentimentos, emoções e capturas de momento sobre o mundo e sobre mim.",
     messageThree: "Obrigado por também compartilhar a imersão no mundo da fotografia.",
     portraitLink:'images/vacations11.jpg',
+    portraitLinkRed:'images/red.png',
     portraitLinkTwo: 'images/myself-behinthelake-bel.jpg',
     portraitLinkThree:'images/red1.jpg',
     portraitLinkFour:'images/blonde2.JPG',
